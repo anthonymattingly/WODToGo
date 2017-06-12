@@ -1,0 +1,60 @@
+html {
+background: url(C:/Users/asmatt01/mattinglyCLProject/kettlebellbackground.jpg) no-repeat center center fixed;
+background-size: cover;
+}
+
+.leftColumn, .middleColumn, .rightColumn {
+margin: 0 auto;
+}
+
+img.armLeft, img.armMiddle, img.armRight{
+max-height: 200px;
+max-width: 200px;
+margin-left: 160px;
+}
+
+
+
+.header {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: roboto;
+}
+
+p {
+color: white;
+text-align: center;
+}
+
+button {
+display: block;
+margin: 0 auto;
+}
+
+button:hover {
+background-color: red;
+}
+
+.container {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:stretch;
+}
+
+.container > div {
+flex: 1;
+} 
+
+/*media query below*/
+
+@media (max-width: 960px){
+    .container {
+    flex-direction:column;  
+        }
+    img.armLeft, img.armMiddle, img.armRight{
+margin-left: 45px;
+    }
+} /*end media query*/

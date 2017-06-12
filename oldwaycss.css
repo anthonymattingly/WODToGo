@@ -1,0 +1,21 @@
+/*old way css*/
+
+/*.container {
+ width: 100%;   
+    
+}
+
+.leftColumn {
+float: left;
+max-width: 33%;
+}
+
+.middleColumn {
+float: left;
+max-width: 33%;
+}
+
+.rightColumn {
+float: right;  
+max-width: 33%;
+}*/
