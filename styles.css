@@ -10,26 +10,36 @@ margin: 0 auto;
 img.armLeft, img.armMiddle, img.armRight{
 max-height: 200px;
 max-width: 200px;
+margin-top: 30px;
 margin-left: 160px;
 }
 
+.leftColumn, .middleColumn, .rightColumn {
+text-align: center;
+}
 
+.firstMovement, .secondMovement, .thirdMovement {
+display: inline-block;
+margin-top: 25px;
+}
 
 .header {
-    color: white;
+    color: #fff;
     text-align: center;
     font-weight: bold;
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
-color: white;
+color: #fff;
 text-align: center;
 }
 
 button {
+
 display: block;
 margin: 0 auto;
+font-family: 'Roboto', sans-serif;
 }
 
 button:hover {
@@ -42,6 +52,7 @@ background-color: red;
     flex-direction:row;
     justify-content:flex-start;
     align-items:stretch;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container > div {
@@ -54,7 +65,7 @@ flex: 1;
     .container {
     flex-direction:column;  
         }
-    img.armLeft, img.armMiddle, img.armRight{
+img.armLeft, img.armMiddle, img.armRight{
 margin-left: 45px;
     }
 } /*end media query*/

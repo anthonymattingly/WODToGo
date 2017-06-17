@@ -1,17 +1,30 @@
+/*
+var $firstExercise = $("<span>figure this out</span>");
+var $secondExercise = $("<span>Movement2 coming from the good stuff</span>");
+var $thirdExercise = $("<span>Movemen3 coming from the good stuff</span>");
+
 $(document).ready(function(){
+    $(".firstMovement").hide(); 
     $(".leftButton").click(function(){
-        $(".armLeft").slideUp("fast");
+    $("body").append($firstExercise);
+    $(".armLeft").slideUp("fast");
     });
 });
 
+
 $(document).ready(function(){
+    $(".secondMovement").hide();
     $(".middleButton").click(function(){
-        $(".armMiddle").slideUp("fast");
+    $("body").append($secondExercise);
+    $(".armMiddle").slideUp("fast");
     });
 });
 
 $(document).ready(function(){
+    $(".thirdMovement").hide();
     $(".rightButton").click(function(){
-        $(".armRight").slideUp("fast");
+    $("body").append($thirdExercise);
+    $(".armRight").slideUp("fast");
     });
 });
+*/
