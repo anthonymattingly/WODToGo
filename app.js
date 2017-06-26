@@ -11,53 +11,42 @@ var movement1 = movement2 = movement3 = [
     "30 Second Max Effort Tuck Jump"
 ];
 
-var rand1 = Math.floor(Math.random() * movement1.length);
-var rand2 = Math.floor(Math.random() * movement2.length);
-var rand3 = Math.floor(Math.random() * movement3.length);
+var i = Math.floor(Math.random() * movement1.length);
+var j = Math.floor(Math.random() * movement2.length);
+var k = Math.floor(Math.random() * movement3.length);
 
-var firstPrintOut = movement1[rand1];
-var secondPrintOut = movement2[rand2];
-var thirdPrintOut = movement3[rand3];
+var firstPrintOut = movement1[i];
+var secondPrintOut = movement2[j];
+var thirdPrintOut = movement3[k];
 
+//function that generates the workout, only need for conditional statement
+/*var workoutGenerate= function(firstPrintOut,secondPrintOut,thirdPrintOut) {
 
-/*var firstPrintOut = document.getElementsByClassName("firstMovement");
-firstPrintOut.innerHTML = "I am changing the first movement";
-alert(firstMovement.innerHTML);
-
-var movementTwo = document.getElementsByClassName("secondMovement");
-movementTwo.innerHTML = "I am changing the second movment";
-alert(movementTwo.innerHTML);
-
-var movementThree = document.getElementsByClassName("firstMovement");
-movementThree.innerHTML = "I am changing the thrid movment";
-alert(movementThree.innerHTML);*/
-
-var $firstExercise = $("<span>Movement1k coming from the good stuff</span>");
-var $secondExercise = $("<span>Movement2 coming from the good stuff</span>");
-var $thirdExercise = $("<span>Movemen3 coming from the good stuff</span>");
+};*/
 
 $(document).ready(function(){
-    $(".firstMovement").hide(); 
     $(".leftButton").click(function(){
-    $("body").append($firstExercise);
+    $(".firstMovement").append(firstPrintOut);
     $(".armLeft").slideUp("fast");
+    $(".leftButton").attr("disabled",true);//disables button after clicked once
     });
 });
 
 
+
 $(document).ready(function(){
-    $(".secondMovement").hide();
     $(".middleButton").click(function(){
-    $("body").append($secondExercise);
+    $(".secondMovement").append(secondPrintOut); //.secondMovement is class name in HTML
     $(".armMiddle").slideUp("fast");
+    $(".middleButton").attr("disabled",true);//disables button after clicked once
     });
 });
 
 $(document).ready(function(){
-    $(".thirdMovement").hide();
     $(".rightButton").click(function(){
-    $("body").append($thirdExercise);
+    $(".thirdMovement").append(thirdPrintOut); //.thirdMovement is class name in HTML
     $(".armRight").slideUp("fast");
+    $(".rightButton").attr("disabled",true);//disables button after clicked once
     });
 });
 
