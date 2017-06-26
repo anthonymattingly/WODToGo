@@ -16,7 +16,8 @@ margin: auto;
 }
 
 #arm{
-padding-top: 20px; 
+padding-top: 100px; 
+padding-left: 50px;
 }
 
 .leftColumn, .middleColumn, .rightColumn {
@@ -45,6 +46,7 @@ button {
 display: block;
 margin: 0 auto;
 font-family: 'Roboto', sans-serif;
+margin-bottom: 20px;
 }
 
 button:hover {
@@ -73,4 +75,10 @@ flex: 1;
 img.armLeft, img.armMiddle, img.armRight{
 margin-left: 45px;
     }
+    
+#arm{
+padding-top: 100px; 
+padding-left: 20px;
+}
+    
 } /*end media query*/

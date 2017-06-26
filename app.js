@@ -8,21 +8,25 @@ var movement1 = movement2 = movement3 = [
     "50 Sit Ups",
     "25 Lunges",
     "1 minute Forearm Plank",
-    "30 Second Max Effort Tuck Jump"
+    "30 Second Max Effort Tuck Jump"  
 ];
+
 
 var i = Math.floor(Math.random() * movement1.length);
 var j = Math.floor(Math.random() * movement2.length);
 var k = Math.floor(Math.random() * movement3.length);
 
+//code block below ensures movement is not duplicated
+if(i==j || i==k || j==k){
+var firstPrintOut = movement1[i+1];
+var secondPrintOut = movement2[j-1];
+var thirdPrintOut = movement3[k+2];     
+} else {
 var firstPrintOut = movement1[i];
 var secondPrintOut = movement2[j];
-var thirdPrintOut = movement3[k];
+var thirdPrintOut = movement3[k];   
+}
 
-//function that generates the workout, only need for conditional statement
-/*var workoutGenerate= function(firstPrintOut,secondPrintOut,thirdPrintOut) {
-
-};*/
 
 $(document).ready(function(){
     $(".leftButton").click(function(){
@@ -49,6 +53,7 @@ $(document).ready(function(){
     $(".rightButton").attr("disabled",true);//disables button after clicked once
     });
 });
+
 
 
 
