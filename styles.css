@@ -1,56 +1,80 @@
+* {
+    font-family: 'Zilla Slab', serif;
+}
+
 html {
-background: url(C:/Users/asmatt01/mattinglyCLProject/kettlebellbackground.jpg) no-repeat center center fixed;
-background-size: cover;
+    background: url(C:/Users/asmatt01/mattinglyCLProject/kettlebellbackground.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    color: #7e9c07;
+    font-size: 100px;
+}
+
+h2 {
+    color: #7e9c07;
+}
+
+h3 {
+    color: #7e9c07;
+    padding-bottom: 70px;
 }
 
 .leftColumn, .middleColumn, .rightColumn {
-margin: 0 auto;
+    margin: 0 auto;
 }
 
 img.armLeft, img.armMiddle, img.armRight{
-max-height: 200px;
-max-width: 200px;
-margin-top: 30px;
-margin-left: 160px;
-margin: auto;
+    max-height: 200px;
+    max-width: 200px;
+    margin-top: 30px;
+    margin-left: 160px;
+    margin: auto;
 }
 
 #arm{
-padding-top: 100px; 
-padding-left: 50px;
+    padding-top: 100px; 
+    padding-left: 50px;
 }
 
 .leftColumn, .middleColumn, .rightColumn {
-text-align: center;
+    text-align: center;
 }
 
 .firstMovement, .secondMovement, .thirdMovement {
-display: inline-block;
-margin-top: 25px;
-background-color: red;
+    display: inline-block;
+    font-weight: 900;
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
 }
 
 .header {
     color: #fff;
     text-align: center;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
 }
 
 p {
-color: #fff;
-text-align: center;
+    color: #7e9c07;
+    text-align: center;
 }
 
 button {
-display: block;
-margin: 0 auto;
-font-family: 'Roboto', sans-serif;
-margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 70px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: rgba(162, 210, 246, 0.77);
 }
 
-button:hover {
-background-color: red;
+button:hover {  
+    width: 150px;
+    height: 100px;
 }
 
 .container {
@@ -59,18 +83,16 @@ background-color: red;
     flex-direction:row;
     justify-content:flex-start;
     align-items:stretch;
-    font-family: 'Roboto', sans-serif;
 }
 
 .container > div {
-flex: 1;
+    flex: 1;
 } 
 
 footer > div {
-margin-top: 50px;
-background-color: blue;
-text-align:center;
-font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+    background-color: blue;
+    text-align:center;
 }
 
 
@@ -82,12 +104,12 @@ font-family: 'Roboto', sans-serif;
     flex-direction:column;  
         }
 img.armLeft, img.armMiddle, img.armRight{
-margin-left: 45px;
+    margin-left: 45px;
     }
     
 #arm{
-padding-top: 100px; 
-padding-left: 20px;
+    padding-top: 100px; 
+    padding-left: 20px;
 }
     
 } /*end media query*/

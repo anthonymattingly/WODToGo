@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>WOD To Go</title>
@@ -8,67 +9,59 @@
     <link rel = "stylesheet" type = "text/css" href = "styles.css" />
     
     <!-- Google Fonts Below -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300,300i,700,700i" rel="stylesheet">
-    
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300,300i,700,700i" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
 </head>
 
 <body>
-
 <!-- Header -->
 <header class="header">     
     <div>
     
-    <h1>WOD To Go</h1>
-    
-    <!---Stuff to go below header below this comment--> 
-    <h2>WOD To Go is the perfect travel tool for anyone who can't make it to the gym but still wants to get a great workout.  Whether it's your basement, hotel room, or even the beach, let WOD To Go be your coach and decide what workout is in store for you today.</h2>
-    <h3>Click each button for a movement.  Your workout is a combination of each movement split however you like as many times a you like.</h3>
+        <h1>WOD To Go</h1>
+        <h2>WOD To Go is the perfect travel tool for anyone who can't make it to the gym but still wants to get a great workout.  Whether it's your basement, hotel room, or even the beach, let WOD To Go be your coach and decide what workout is in store for you today.
+        </h2>
+        <h3>Click each button for a movement.  Your workout is a combination of each movement split however you like as many times a you like.</h3>
     </div>
 </header>
     
 
     
 <div class="container">
-
-<div class="leftColumn">
-<p>Movement 1</p>    
-<button class="leftButton" type="submit">Button1</button>
-<div id="arm">
-<img class="armLeft" src="flexing.png"/>
-    </div>
-<span class="firstMovement"></span>
-</div> <!--end left column div-->
+    <div class="leftColumn">
+        <button class="leftButton" type="submit">1st Movement</button>
+        <div id="arm">
+            <img class="armLeft" src="flexing.png"/>
+        </div>
+        <span class="firstMovement"></span>
+    </div> <!--end left column div-->
     
-<div class="middleColumn">
-<p>Movement 2</p>    
-<button class="middleButton" type="submit">Button2</button>
+    <div class="middleColumn">
+    <button class="middleButton" type="submit">2nd Movement</button>
     <div id="arm">
-    <img class="armMiddle" src="flexing.png"/>
+        <img class="armMiddle" src="flexing.png"/>
     </div>  
-<span class="secondMovement"></span>
-</div> <!--end middle column div-->
+        <span class="secondMovement"></span>
+    </div> <!--end middle column div-->
 
-<div class="rightColumn">
-    <p>Movement 3</p>
-    <button class="rightButton" type="submit">Button3</button>
+    <div class="rightColumn">
+    <button class="rightButton" type="submit">Third Movement</button>
     <div id="arm">
-    <img class="armRight" src="flexing.png"/>
+        <img class="armRight" src="flexing.png"/>
     </div> 
-<span class="thirdMovement"></span>
-</div> <!--end right column div-->
-    
+        <span class="thirdMovement"></span>
+    </div> <!--end right column div--> 
 </div>  <!--//ends container div-->
     
 <footer> <!--//contains ajax weather data-->
-<div id="weather"></div>
-<div id="temp"></div>
+<div id="high1"></div>
+<div id="current_temp"></div>
+<div id="low1"></div>
 </footer>
     
-<!--Add a button somewhere in here-->
-    
-<!--Add Javascript below-->
-<script type="text/javascript" src="app.js"></script>
+<!--Javascript tags below-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
+
 </body>
 </html>
