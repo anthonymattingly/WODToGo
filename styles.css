@@ -2,22 +2,23 @@
     font-family: 'Zilla Slab', serif;
 }
 
-html {
+.bg-img {
     background: url(C:/Users/asmatt01/mattinglyCLProject/kettlebellbackground.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
 h1 {
-    color: #7e9c07;
+    color: rgba(162, 210, 246, 0.90);
     font-size: 100px;
+    font-weight: 200
 }
 
 h2 {
-    color: #7e9c07;
+    color: rgba(162, 210, 246, 0.90);
 }
 
 h3 {
-    color: #7e9c07;
+    color: rgba(162, 210, 246, 0.90);
     padding-bottom: 70px;
 }
 
@@ -44,6 +45,8 @@ img.armLeft, img.armMiddle, img.armRight{
 
 .firstMovement, .secondMovement, .thirdMovement {
     display: inline-block;
+    font-size: 30px;
+    color: rgba(162, 210, 246, 0.90);
     font-weight: 900;
     width: 100px;
     height: 50px;
@@ -69,13 +72,18 @@ button {
     height: 70px;
     border-radius: 10px;
     font-weight: bold;
-    background-color: rgba(162, 210, 246, 0.77);
+    background-color: rgba(162, 210, 246, 0.90);
 }
 
 button:hover {  
     width: 150px;
     height: 100px;
 }
+
+#current_temp, #location{
+font-size: 25px;
+}
+
 
 .container {
     display:flex;

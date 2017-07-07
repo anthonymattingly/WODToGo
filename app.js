@@ -77,7 +77,7 @@ xhr.send();*/
 
 
 
-/*getLocation();
+getLocation();
 
 function getLocation() {    
     if (navigator.geolocation) {
@@ -85,7 +85,7 @@ function getLocation() {
     } else { 
         alert("We can't find you.  Hopefully you know where you are.");
     }
-}
+};
 
 
 function getCurrentPosition(position) {
@@ -97,7 +97,6 @@ function showPosition(position) {
     var geoLat = position.coords.latitude;
     var geoLong = position.coords.longitude;
     var key = "8704dded63fc077d";
-    var ForecastURL = "http://api.wunderground.com/api/" + key + "/forecast/q/" + geoLat + "," + geoLong + ".json";
     var WeatherURL = "http://api.wunderground.com/api/" + key + "/conditions/q/" + geoLat + "," + geoLong + ".json";
 
 
@@ -105,21 +104,12 @@ function showPosition(position) {
         url : WeatherURL,
         dataType : "jsonp",
         success : function(parsed_json) {
-        var temp_f = parsed_json['current_observation']['temp_f'];
-        document.getElementById("current_temp").innerHTML = temp_f;
-        }
-    });
-
-  $.ajax({
-        url : ForecastURL,
-        dataType : "jsonp",
-        success : function(parsed_json) {
-        var fore_high = parsed_json['forecast']['simpleforecast']['forecastday'][0]['high']['fahrenheit'];
-        var fore_low = parsed_json['forecast']['simpleforecast']['forecastday'][0]['low']['fahrenheit'];
-        document.getElementById("high1").innerHTML = fore_high;
-        document.getElementById("low1").innerHTML = fore_low;
+        var location = parsed_json['current_observation']['display_location']['city'];
+        document.getElementById("location").innerHTML = location;
+        var temp_f = parsed_json['current_observation']['temp_f'] +" F in ";
+            document.getElementById("current_temp").innerHTML = temp_f;
         
-        } //end success 
-    });    
+        } //end success
+    }); //end ajax
     
-} //ends showposition function*/
+} //ends showposition function
