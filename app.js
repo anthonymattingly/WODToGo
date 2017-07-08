@@ -20,7 +20,7 @@ var k = Math.floor(Math.random() * movement3.length);
 if(i==j || i==k || j==k){
 var firstPrintOut = movement1[i+1];
 var secondPrintOut = movement2[j-1];
-var thirdPrintOut = movement3[k+2];     
+var thirdPrintOut = movement3[k+3];     
 } else {
 var firstPrintOut = movement1[i];
 var secondPrintOut = movement2[j];
@@ -55,27 +55,6 @@ $(document).ready(function(){
 });
 
 ///Weather AJAX Request Below
-
-/*var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function (){
-if(xhr.readyState === 4){
-weatherFunction(xhr.onreadystatechange);
-}
-    
-
-function weatherFunction(){
-    var r = JSON.parse(xhr.responseText); //r holds value of JSON weather response
-    var dis = "Current location: " + r.current_observation.display_location.full + "  <p>";
-    var temp = r.current_observation.temperature_string+ "  <p>";
-    document.getElementById("weather").innerHTML= dis;
-    document.getElementById("temp").innerHTML= temp;
-  }  //end weatherFunction
-};   //end xhr.onreadystatechange
-
-xhr.open("GET", "http://api.wunderground.com/api/8704dded63fc077d/conditions/q/KY/Louisville.json");
-xhr.send();*/
-
-
 
 getLocation();
 

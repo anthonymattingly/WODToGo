@@ -2,23 +2,25 @@
     font-family: 'Zilla Slab', serif;
 }
 
-.bg-img {
-    background: url(C:/Users/asmatt01/mattinglyCLProject/kettlebellbackground.jpg) no-repeat center center fixed;
+html {
+    background: url(kettlebellbackground.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
 h1 {
-    color: rgba(162, 210, 246, 0.90);
+    color: #d6e6fa;
     font-size: 100px;
-    font-weight: 200
+    font-weight: 200;
 }
 
 h2 {
-    color: rgba(162, 210, 246, 0.90);
+    color: #d6e6fa;
+    font-weight: 200;
 }
 
 h3 {
-    color: rgba(162, 210, 246, 0.90);
+    color: #d6e6fa;
+    font-weight: 200;
     padding-bottom: 70px;
 }
 
@@ -35,7 +37,7 @@ img.armLeft, img.armMiddle, img.armRight{
 }
 
 #arm{
-    padding-top: 100px; 
+    /*padding-top: 100px; */
     padding-left: 50px;
 }
 
@@ -46,11 +48,11 @@ img.armLeft, img.armMiddle, img.armRight{
 .firstMovement, .secondMovement, .thirdMovement {
     display: inline-block;
     font-size: 30px;
-    color: rgba(162, 210, 246, 0.90);
-    font-weight: 900;
+    color: #d6e6fa;
+    font-weight: 1300;
     width: 100px;
     height: 50px;
-    margin-top: 25px;
+   /* margin-top: 25px;*/
 }
 
 .header {
@@ -60,14 +62,14 @@ img.armLeft, img.armMiddle, img.armRight{
 }
 
 p {
-    color: #7e9c07;
+    color: #d6e6fa;
     text-align: center;
 }
 
 button {
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     width: 120px;
     height: 70px;
     border-radius: 10px;
@@ -99,13 +101,38 @@ font-size: 25px;
 
 footer > div {
     margin-top: 50px;
-    background-color: blue;
     text-align:center;
+    color: #d6e6fa;
+    font-weight: bolder;
 }
 
 
 
 /*media query below*/
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      * {
+    font-weight: bold; 
+      }
+      button {
+        margin-top: 40px;
+      }
+      .container {
+    flex-direction:column; 
+         }
+      h1, h2, h3 {
+        color: white;
+      }
+      .nice-weather {
+    color: white;
+    font-size: 30px;
+      }
+}
+
 
 @media (max-width: 960px){
     .container {
