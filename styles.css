@@ -122,7 +122,7 @@ footer > div {
         margin-top: 40px;
       }
       .container {
-    flex-direction:column; 
+    margin-bottom: 250px;
          }
       h1, h2, h3 {
         color: white;
