@@ -121,7 +121,11 @@ footer > div {
       button {
         margin-top: 40px;
       }
-      .container {
+      button:hover {  
+    width: 120px;
+    height: 70px;
+      } /*prevents button enlargment upon hover in mobile touchscreen type devices*/
+    .container {
     margin-bottom: 250px;
          }
       h1, h2, h3 {
