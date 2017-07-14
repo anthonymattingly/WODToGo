@@ -24,7 +24,7 @@ function shuffle(array) {
   return array;
 } //end shuffle function
 
-//Will call shuffle function on array with variable of movement 1 and retrieve first three items
+//Will call the shuffle function on array with variable of movement 1 and retrieve first three items
 var movement = shuffle(movement1); 
 var firstPrintOut = movement1[0];
 var secondPrintOut = movement1[1];
