@@ -1,7 +1,7 @@
 /*start of wod to go JS*/
 
 
-var movement1 = movement2 = movement3 = [
+var movement1 = [
     "25 Air Squats",
     "15 Burpees",
     "30 Push Ups",
