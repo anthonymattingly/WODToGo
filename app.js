@@ -11,31 +11,33 @@ var movement1 = movement2 = movement3 = [
     "30 Second Max Effort Tuck Jump"  
 ];
 
+//Function to shuffle array
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+  return array;
+} //end shuffle function
 
-var i = Math.floor(Math.random() * movement1.length);
-var j = Math.floor(Math.random() * movement2.length);
-var k = Math.floor(Math.random() * movement3.length);
-
-//code block below ensures movement is not duplicated
-if(i==j || i==k || j==k){
-var firstPrintOut = movement1[i+1];
-var secondPrintOut = movement2[j-1];
-var thirdPrintOut = movement3[k+3];     
-} else {
-var firstPrintOut = movement1[i];
-var secondPrintOut = movement2[j];
-var thirdPrintOut = movement3[k];   
-}
+//Will call shuffle function on array with variable of movement 1 and retrieve first three items
+var movement = shuffle(movement1); 
+var firstPrintOut = movement1[0];
+var secondPrintOut = movement1[1];
+var thirdPrintOut = movement1[2];
 
 
 $(document).ready(function(){
     $(".leftButton").click(function(){
-    $(".firstMovement").append(firstPrintOut);
+    $(".firstMovement").append(firstPrintOut);//.firstMovement is class  name in HTML
     $(".armLeft").slideUp("fast");
     $(".leftButton").attr("disabled",true);//disables button after clicked once
     });
 });
-
 
 
 $(document).ready(function(){
